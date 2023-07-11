@@ -1,5 +1,5 @@
 <template>
-    <div class="cart-page__user user"> 
+    <div class="card-page__user user"> 
         <h2 class="user__title">{{getUser?.username}}</h2>
         <span class="user__name">Имя пользователя: {{getUser?.name ?? 'Не найдено'}}</span>
         <span class="user__email">Электронный адрес: {{getUser?.email ?? 'Не найдено'}}</span>
@@ -12,17 +12,13 @@
 import {mapGetters} from 'vuex'
 
 export default{
-    data(){
-        return{
-        }
-    },
     computed:{
         ...mapGetters('usersModule',['getUser']),
     },
 }
 
 </script>
-<style>
+<style scoped>
     .user{
         display: flex;
         flex-direction: column;

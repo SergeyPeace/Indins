@@ -1,11 +1,11 @@
 <template>
     <ul>
-        <li v-for="cartsItem in posts" 
-        :key="cartsItem.id" 
-        @click="$router.push({name:'cart', params:{id: cartsItem.id}})"
+        <li v-for="cardsItem in posts" 
+        :key="cardsItem.id" 
+        @click="$router.push({name:'card', params:{id: cardsItem.id}})"
         >
-            <h3>{{getUsername(cartsItem.userId)}}</h3>
-            {{ cartsItem.title }}
+            <h3>{{getUsername(cardsItem.userId)}}</h3>
+            {{ cardsItem.title }}
         </li>
     </ul>
 </template>
@@ -40,9 +40,7 @@ export default{
         background: white;
         border-radius: 15px;
         cursor: pointer;
-
     }
-
     li h3{
         margin: 0;
         margin-bottom: 5px;

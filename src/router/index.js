@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainPage from '../pages/MainPage.vue'
-import CartPage from '../pages/CartPage'
+import CardPage from '../pages/CardPage'
 
 Vue.use(VueRouter)
 
@@ -13,10 +13,9 @@ const routes = [
   },
   {
     path: '/:id',
-    name: 'cart',
-    component: CartPage
+    name: 'card',
+    component: CardPage
   }
-
 ]
 
 const router = new VueRouter({

@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .cart-page__post{
         margin: 0 auto;
         margin-top: 30px;

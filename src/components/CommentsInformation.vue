@@ -1,5 +1,5 @@
 <template>
-    <div class="cart-page__comments comments">
+    <div class="card-page__comments comments">
         <h3 class="comments__title">Комментарии</h3>
         <ul class="comments__list">
             <li class="comments__item" v-for="(item, id) in getComments" :key="item.id">
@@ -20,8 +20,8 @@ export default {
 }
 </script>
 
-<style>
-    .cart-page__comments{
+<style scoped>
+    .card-page__comments{
         margin: 0 auto;
         margin-top: 30px;
         padding: 20px 15px;

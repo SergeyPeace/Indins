@@ -45,7 +45,4 @@ export default{
       return getters.getPosts?.filter(post => post.userId === +userId) ?? []
     }
   },
-
-  modules: {
-  }
 }

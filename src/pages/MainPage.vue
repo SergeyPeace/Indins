@@ -1,14 +1,14 @@
 <template>
   <div>
     <FilterComponent @filterChange="filterHandler"/>
-    <CartsList :posts="posts"/>
+    <CardsList :posts="posts"/>
   </div>
 </template>
 
 <script>
 import { mapActions, mapGetters} from 'vuex'
 import FilterComponent from '@/components/FilterComponent.vue'
-import CartsList from '@/components/CartsList.vue'
+import CardsList from '@/components/CardsList.vue'
 
 export default {
     data(){
@@ -18,7 +18,7 @@ export default {
     },
     components:{
         FilterComponent,
-        CartsList,
+        CardsList,
     },
     computed:{
         ...mapGetters('postsModule', ['getPosts'])
@@ -35,7 +35,3 @@ export default {
     },
 }
 </script>
-
-<style>
-
-</style>
